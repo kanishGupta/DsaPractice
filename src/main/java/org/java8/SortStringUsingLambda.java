@@ -1,6 +1,7 @@
 package org.java8;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class SortStringUsingLambda {
 
@@ -28,5 +29,8 @@ public class SortStringUsingLambda {
         for (String string: stringArray) {
             System.out.println(string);
         }
+
+        //Comparator<Employee> compareByFirstName = Comparator.comparing( Employee::getFirstName );
+
     }
 }

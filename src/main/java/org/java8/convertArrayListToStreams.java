@@ -1,7 +1,10 @@
 package org.java8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class convertArrayListToStreams {
 
@@ -9,12 +12,14 @@ public class convertArrayListToStreams {
         List<String> stringList = new ArrayList<>();
         stringList.add("ank");
         stringList.add("sam");
-        stringList.add("az");
         stringList.add("neh");
         stringList.add("ad");
 
-        // In one line display all records that start with 'a' in stringList
-        System.out.println("\n1. Use stream for filtering and display");
-        //stringList.stream().reduce()
+        Stream<String> stream = stringList.stream();
+
+        //normal sort and ap
+        stream.sorted().map( s -> s + " kanishk").forEach(System.out::println);
+//reverse sort
+        stream.sorted( (a,b) -> b.compareTo(a)).map( s -> s + " kanishk").forEach(System.out::println);
     }
 }

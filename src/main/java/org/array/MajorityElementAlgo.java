@@ -5,7 +5,7 @@ public class MajorityElementAlgo {
 
     public static void main(String[] args) {
         int majorityCount = 0;
-        int arr[] = {2,3,2,3,5,3,2,3,3};
+        int arr[] = {5,7,9,5,2,5,9,5,5};
         MajorityElementAlgo majorityElementAlgo = new MajorityElementAlgo();
 
         int majorityCandidate = majorityElementAlgo.findMajorityElement(arr);
