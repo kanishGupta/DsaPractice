@@ -1,33 +1,24 @@
 package org.array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class MapTest {
 
     public static void main(String[] args) {
-// sort string
-        String[] stringArray = {"ab", "ef", "cd"};
 
-// using inner class
-//        Comparator comparator = new Comparator<String>() {
-//            @Override
-//            public int compare(String o1, String o2) {
-//                return o1.compareTo(o2);
-//            }
-//        };
-//        Arrays.sort(stringArray, comparator);
+        List<Integer> list = new ArrayList<>();
 
-//using lambda expression
-//        Arrays.sort(stringArray, (String a, String b) -> {
-//            return a.compareTo(b);
-//        });
+        list.add(9);
+        list.add(7);
+        list.add(6);
+        list.add(5);
 
-//One line format of lambda expression.
-        Arrays.sort(stringArray, (a,b) -> a.compareTo(b));
-
-        for (String string: stringArray) {
-            System.out.println(string);
-        }
+        System.out.println(list.get(0) + list.get(list.size()-1));
     }
 
 }

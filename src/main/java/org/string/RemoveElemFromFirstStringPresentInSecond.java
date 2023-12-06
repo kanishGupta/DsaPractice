@@ -19,7 +19,7 @@ public class RemoveElemFromFirstStringPresentInSecond {
         String str = "";
 
         for(char c : toCharArray){
-            freqArray[c - 'a']--;
+            freqArray[c - 'a']++;
         }
 
         for(int i =0; i <n1; i++){
