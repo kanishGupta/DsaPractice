@@ -6,7 +6,7 @@ class FreqTest {
 
     public static void main(String args[]){
 
-        String str = "abcdsdad";
+        String str = "abcdsdad"; //a=2, b=1, c=1, d=3, s=1, d=3, a=2, d=1
         findFreq(str.toCharArray());
         System.out.println("no of processors : "+Runtime.getRuntime().availableProcessors());
     }
